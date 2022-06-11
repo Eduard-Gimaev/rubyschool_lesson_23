@@ -26,4 +26,5 @@ post '/visit' do
 	@barber = params[:barber]
 
 	erb "Ok, username is #{@username}, #{@phone}, #{@datetime}, #{@barber}"
+	#The form has been complited"
 end
