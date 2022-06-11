@@ -17,3 +17,13 @@ end
 get '/contacts' do
 	erb :contacts
 end
+
+post '/visit' do
+
+	@username = params[:username]
+	@phone = params[:phone]
+	@datetime = params[:datetime]
+	@barber = params[:barber]
+
+	erb "Ok, username is #{@username}, #{@phone}, #{@datetime}, #{@barber}"
+end
